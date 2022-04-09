@@ -10,13 +10,13 @@
 <body>
     <main>
     <navigation>
+        <a href="#about"><div class="circlen"><p>About Me</p></div></a>
         <a href="#interested"><div class="circlen"><p>Interested In</p></div></a>
         <a href="#programing"><div class="circlen"><p>Programing Language</p></div></a>
-        <a href="#about"><div class="circlen"><p>About Me</p></div></a>
         <a href="#projects"><div class="circlen"><p>Projects</p></div></a>
     </navigation>
     <nav>
-        <h3>Name</h3>
+        <h3>Nt</h3>
         <div class="navstyle">
             <div class="smallcircle">
 
@@ -37,18 +37,40 @@
                 </div>
             </div>
             <div class="desc">
-            <p>Am Currently Studying<br>Computer Science<br>at ASTU</p>
+            <p>I Am a Developer Currently <br> Learning Computer Science<br>at ASTU</p>
             <div class="social">
-                <a href="https://github.com/natyyG" target=__blank><img src="./icons/github.svg" alt=""></a>
-                <img src="./icons/facebook.svg" alt="">
-                <a href="https://mail.google.com/mail/" target=__blank><img src="./icons/gmail.svg" alt=""></a>
-                <a href="https://web.telegram.org/z/#1059083003" target=__blank><img src="./icons/telegram.svg" alt=""></a>
+                <a href="https://github.com/natyyG" target=__blank id="github" onClick="opens('GitHub')"><img src="./icons/github.svg" alt="github icon"></a>
+                <a href="https://www.facebook.com/checkpoint/dyi/natnale" target="_blank" rel="noopener noreferrer" onClick="opens('Facebook')"><img src="./icons/facebook.svg" alt="facebook icon">
+                <a href="https://mail.google.com/mail/" target=__blank onClick="opens('Gmail')"><img src="./icons/gmail.svg" alt="gmailicon" ></a>
+                <a href="https://web.telegram.org/z/#1059083003" target=__blank onClick="opens('Telegram')"><img src="./icons/telegram.svg" alt="telegram icon" ></a>
             </div>
             </div>
         </div>
     </header>
-    
-        <section id="interested" class="fadeeffect">
+        <section id="about">
+            <div class="aboutcontainer">
+                <div class="aboutprofileimage">
+                    <img id="abtavatarimg" onClick="swap()" src="./aboutavatar.svg" alt="about avatar">
+                </div>
+                <div class="aboutmedesc">
+                    <h2 class="header">About</h2>
+                    <p class="aboutlongp">
+                        Hello, I am Natnael Getachew, I am a computer Science Student at Adama Science and Technology Univeristy (ASTU), I am a 3rd year Student
+                        and I am facinated with programing languages and learning new things, I was introduced to web languages(HTML, CSS, JS) at the age of 15 through our IT course 
+                        and I become curious about the web and how it workes I tried to to read about it but because there was nobody to guide me and I couldn't get the materials
+                        sufficent to help me develp my knowledge it was hard to understand, at the age of 17 I was introduced to programing language(C++) and it was fun and I liked it but
+                        I couldn't see any real world application on it I understand I was wrong now.
+                    <br>
+                    <br>
+                        And at the age of 18 I went to campus at that time I was learning cyber security and I was getting more access throught the internet It was fun and I really liked it and then I was introduced to python programing language
+                        and I my focus shifted to it I tried to work and learn many of the libraries like openCv, Pygame, Beautiful Soup, Django, Tkinter my journey to python stoped when I tried to learn Tensor flow
+                        It was really hard to understand now am working with Node js and React its fun and I enjoy doing it. 
+                </p>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="interested">
             <div class="container">
                 <h1 class="header">Interested <span>In</span></h1>
                 <div class="bigbox">
@@ -57,7 +79,7 @@
 
                         </div>
                         <div class="imgcontainer">
-                            <img src="./web.svg" alt="">
+                            <img src="./web.svg" alt="web developer illustration">
                         </div>
                     </div>
                     <div class="boxdesc">
@@ -79,7 +101,7 @@
 
                         </div>
                         <div class="imgcontainer">
-                            <img src="./mobile.svg" alt="">
+                            <img src="./mobile.svg" alt="mobile illustration">
                         </div>
                     </div>
                     <div class="boxdesc">
@@ -101,7 +123,7 @@
 
                         </div>
                         <div class="imgcontainer">
-                            <img src="./ui.svg" alt="">
+                            <img src="./ui.svg" alt="ui designer illustration">
                         </div>
                     </div>
                     <div class="boxdesc">
@@ -147,66 +169,102 @@
             </div>
             
         </section>
-        
         <section id="projects">
-            <h1 class="header projtext">My <span>Projects</span></h1>
-            <div class="projcontainer">
-                <div class="projbox">
-                    <h2>Movie recomandation</h2>
-                    <p>This was one of my project that Introduces me to backend developmet. It uses python as back-end and HTML and CSS for front-end I used Postegres sql it incorporates MVC architecture for separation of concerns</p>
-                </div>
-                <div class="projbox">
-                    <h2>Car game</h2>
-                    <p>pygame (the library) is a Free and Open Source python programming language library for making multimedia applications like games and its one of the libraries that drive me through programing and my first project was a 2d car game with infinite loop that keep track of scores</p>
-                </div>
-                <div class="projbox">
-                    <h2>Contact App</h2>
-                    <p>This was one of the most fun projects I ever experianced since I started coding. Partially because I was doing it with a friend. And this project was done using Android studio using java programing language It was really enjoyable experiance.</p>
-                </div>
-                <div class="projbox">
-                    <h2>Football App</h2>
-                    <p>The idea of this project was to learn how to handle API requests and we found this free football api to work with but half way through it got too complicated and couldn't be finished.</p>
-                </div>
-                <div class="projbox">
-                    <h2>Node JsonServer</h2>
-                    <p>It is a server that allows you to create Fake API and you could do many request and do different things with it and my project was to implement the CRUD operation on the fake api it created It took a while but it was fun and interesting to do this project.</p>
-                </div>
-                <div class="projbox">
-                    <h2>Library System</h2>
-                    <p>This was a library system made using Node for backend Jsx and css for frontend express as local server though this project isn't finished yet am learning and getting a lot of experiances building this project.</p>
-                </div>
-                
-            </div>
-        </section>
-        <section id="about">
-            <h1 class="abouttext">About <span>Me</span></h1>
-            <img class="top" src="./top.svg" alt="">
-            <div class="aboutcont">
-                <div class="abtimg">
-                    <img src="./anime (2).jpg" alt="">
-                </div>
-                <div class="abtdata">
-                    <p>Name: Natnael Getachew</p>
-                    <p>Date of Birth: </p>
-                    <p>Email: natnalecs16@gmail.com</p>
-                    <p>Phone No: 09******82</p>
-                    <p>Location: Addis Ababa</p>
-                    <p>Hobbies: Watching Movies, Coding, Reading</p>
+            <div class="projectcontainer">
+                <h1 class="header projheader">MY <span>Projects</span></h1>
+                <div class="projboxcontainer">
+                    <div class="projboxes">
+                        <div class="projbox">
+                            <div class="projheadercont">
+                                <img src="./pythonlogo.svg" alt="logo">
+                                <h3>Movie Recomandation Site</h3>
+                            </div>
+                            <div class="projdesc">
+                                <p>This was one of my project done using Django which is a Python framework which is used to build web application it uses HTML and CSS as front-end and Django as back-end and Postegresql as database system It incorporates MVC concept for separation of concerns</p>
+                                <a href="https://github.com/nati-pi/Hunt-Anime" target="__blank"><button onClick="view()" id="pybtn">View Project</button></a>
+                            </div>
+                        </div>
+                        <div class="projbox">
+                            <div class="projheadercont">
+                                <img src="./reactlogo.svg" alt="logo">
+                                <h3>Event Posting App</h3>
+                            </div>
+                            <div class="projdesc">
+                                <p>This is an web based app used to announce posts. It uses Json-Server which is a fake api which you could perform CRUD operation on It makes data fetching easier. It uses React and JSX as front-end and Nodejs and express as back-end. </p>
+                                <a href="https://github.com/natyyG/GG-Proj" target="__blank"><button onClick="view1()" id="secbtn">View Project</button></a>
+                            </div>
+                        </div>
+                        <div class="projbox">
+                            <div class="projheadercont">
+                                <img src="./javaicon.svg" alt="logo">
+                                <h3>NFT preview Card</h3>
+                            </div>
+                            <div class="projdesc">
+                                <p>This was one of my projects accepted from front-end mentor which is a site which develop your designing ability. This is one of my favorite projects I have done so far from the site It was enjoyable and really fun experiance to build this project.</p>
+                                <a href="https://github.com/natyyG/nft-previewcard" target="__blank"><button onClick="view2()" id="thrbtn">View Project</button></a>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-            <img class="bottom" src="./bottom.svg" alt="">
-        </section>
-        <section>
+
+        </section> 
         <footer>
-            <div class="footersoc social">
-                <a href="https://github.com/natyyG" target=__blank><img src="./icons/github.svg" alt=""></a>
-                <img src="./icons/facebook.svg" alt="">
-                <a href="mail.google.com/mail/" target=__blank><img src="./icons/gmail.svg" alt=""></a>
-                <a href="https://web.telegram.org/z/#1059083003" target=__blank><img src="./icons/telegram.svg" alt=""></a>
+            <div class="footercont">
+                <img class="footerav" src="./footeravatar.svg" alt="gentlemen illustration">
+                <div class="footercontent">
+                    <div class="logo">
+                        <img src="./personallogo.svg" alt="personal logo">
+                    </div>
+                    <div class="navigation">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Interested In</li>
+                            <li>Projects</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li> <a href="https://github.com/nati-pi" target=__blank id="github" onClick="opens('GitHub')">GitHub</a></li>
+                            <li><a href="https://www.facebook.com/checkpoint/dyi/natnale" target="_blank" rel="noopener noreferrer" onClick="opens('Facebook')">Facebook</a></li>
+                            <li><a href="https://mail.google.com/mail/" target=__blank onClick="opens('Gmail')">Email</a></li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </section>
+        </footer>  
     </main>
-    <script src="./app.js"></script>
+    <script>
+        function swap(){
+            document.getElementById('abtavatarimg').src = "./avatarimg2.svg"
+        }
+        function view(){
+            const qr = document.getElementById('pybtn');
+            qr.innerHTML = "Project Viewed"
+            qr.style.backgroundColor ="red"
+            qr.style.color = "white"
+        }
+        function view1(){
+            const qr = document.getElementById('secbtn');
+            qr.innerHTML = "Project Viewed"
+            qr.style.backgroundColor ="red"
+            qr.style.color = "white"
+        }
+        function view2(){
+            const qr = document.getElementById('thrbtn');
+            qr.innerHTML = "Project Viewed"
+            qr.style.backgroundColor ="red"
+            qr.style.color = "white"
+        }
+        function opens(x){
+            alert("Open "+x+" on New Tab")
+        }
+        document.getElementById("github").addEventListener("click", opens(x))
+    </script>
 </body>
 </html>
